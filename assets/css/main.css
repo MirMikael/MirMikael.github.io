@@ -100,7 +100,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.1), rgba(46, 49, 65, 0.1)), url("../../images/1gif");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.1), rgba(46, 49, 65, 0.1)), url("../../images/1.gif");
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -128,7 +128,7 @@ input, select, textarea {
 		font-size: 16.5pt;
 		font-weight: 300;
 		line-height: 1.65;
-		z-index:100
+		z-index:100;
 	}
 
 		@media screen and (max-width: 1680px) {
