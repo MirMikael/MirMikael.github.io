@@ -4154,3 +4154,8 @@ input, select, textarea {
 		}
 
 	}
+@media screen and (max-width: 736px) {
+	body {
+		background-attachment: scroll, scroll;
+	}
+}
