@@ -3371,14 +3371,38 @@ body {
 /* Banner */
 
 #banner {
+	position: relative;
+	overflow: hidden;
 	padding: 10em 0 4.75em 0;
+	background-color: #2e3141;
+}
+
+#banner::before {
+	content: "";
+	position: absolute;
+	top: -20px; right: -20px; bottom: -20px; left: -20px;
+	background-image: url("../../images/1.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: blur(25px) brightness(0.6);
+	z-index: 1;
+}
+
+#banner::after {
+	content: "";
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
 	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.25), rgba(46, 49, 65, 0.25)), url("../../images/1.webp");
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
+	z-index: 2;
 }
 
 		#banner .inner {
+			position: relative;
+			z-index: 3;
 			margin: 0 auto;
 			width: 55em;
 		}
@@ -3460,16 +3484,10 @@ body {
 
 		@media screen and (max-width: 1280px) {
 
-			#banner {
-				padding: 7em 0 8.25em 0 ;
-				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, 0.3)), url("../../images/1.webp");
-				background-size: auto,
-  contain;
-				background-position: center,
- center;
-				margin-bottom: -6.5em;
-			}
+		#banner {
+			padding: 7em 0 8.25em 0 ;
+			margin-bottom: -6.5em;
+		}
 
 		}
 
