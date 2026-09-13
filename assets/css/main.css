@@ -3373,7 +3373,7 @@ body {
 #banner {
 	padding: 10em 0 4.75em 0;
 	background-image: linear-gradient(to top, rgba(46, 49, 65, 0.25), rgba(46, 49, 65, 0.25)), url("../../images/1.webp");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
 }
@@ -3465,7 +3465,7 @@ body {
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.3), rgba(46, 49, 65, 0.3)), url("../../images/1.webp");
 				background-size: auto,
- cover;
+  contain;
 				background-position: center,
  center;
 				margin-bottom: -6.5em;
